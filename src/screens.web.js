@@ -30,7 +30,7 @@ function isPropTruthy(prop) {
   return !!activeValue;
 }
 
-export class Screen extends React.Component {
+export class Screen extends React.PureComponent {
   static defaultProps = {
     active: true,
   };
