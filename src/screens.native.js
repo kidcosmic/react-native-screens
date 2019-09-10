@@ -74,7 +74,7 @@ const ScreensNativeModules = {
   },
 };
 
-class Screen extends React.Component {
+class Screen extends React.PureComponent {
   setNativeProps(props) {
     this._ref.setNativeProps(props);
   }
@@ -118,7 +118,7 @@ class Screen extends React.Component {
   }
 }
 
-class ScreenContainer extends React.Component {
+class ScreenContainer extends React.PureComponent {
   render() {
     if (!USE_SCREENS) {
       return <View {...this.props} />;
