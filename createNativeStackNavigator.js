@@ -18,7 +18,7 @@ import {
   ScreenStackHeaderTitleView,
 } from 'react-native-screens';
 
-class StackView extends React.Component {
+class StackView extends React.PureComponent {
   _removeScene = scene => {
     const { navigation } = this.props;
     navigation.dispatch(
